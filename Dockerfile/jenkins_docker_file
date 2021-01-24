@@ -4,7 +4,7 @@ RUN wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/j
 RUN rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 RUN yum install jenkins -y
 #FROM jenkins/jenkins:lts
-#USR root
+#USR root (i.e root user)
 #RUN apt install java
 RUN mkdir /opt/maven
 WORKDIR /opt/maven
